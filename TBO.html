@@ -22,9 +22,9 @@
 
 <body>
 
-    <!-- navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -33,25 +33,46 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-
                 <a href="#home" class="navbar-brand page-scroll">Andi Andhika</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#penjelasan" class="page-scroll">Teori Bahasa dan Otomata</a></li>
-                    <li><a href="notasibig-o.html" class="page-scroll">Notasi Big-O</a></li>
-                    <li><a href="#isi" class="page-scroll">Contoh gambar penerapan ilmu TBO</a></li>
-                    <li><a href="index.html" class="page-scroll">Evaluation Plan</a></li>
-                    <li><a href="Queryprocessing.html" class="page-scroll">Query Processing</a></li>
-                    <li><a href="desainbasisdata.html" class="page-scroll">Desain Basis Data</a></li>
-                    <li><a href="requirementsacid.html" class="page-scroll">Transaction</a></li>
 
+                    <li><a href="#penjelasan" class="page-scroll">Teori Bahasa dan Otomata</a></li>
+                    <li><a href="#penjelasan2" class="page-scroll">Fungsi mempelajari TBO</a>
+                    </li>
+                    <li><a href="#penjelasan3" class="page-scroll"> Contoh Penerapan Ilmu TBO</a>
+                    </li>
+                    <li><a href="#isi" class="page-scroll">Contoh gambar penerapan ilmu TBO</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Basis Data <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="Queryprocessing.html" class="page-scroll">Query Processing</a></li>
+                            <li><a href="index.html" class="page-scroll">Evaluation Plan</a></li>
+                            <li><a href="desainbasisdata.html" class="page-scroll">Desain Basis Data</a></li>
+                            <li><a href="requirementsacid.html" class="page-scroll">Transaction</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Teori Bahasa dan Otomata <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#penjelasan" class="page-scroll">Teori Bahasa dan Otomata</a></li>
+                            <li><a href="notasibig-o.html" class="page-scroll">Notasi Big-O</a></li>
+                        </ul>
+                    </li>
                 </ul>
-            </div>
-        </div>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
     </nav>
     <!-- akhir navbar -->
+
+
 
     <!-- jumbotron -->
     <div class="jumbotron text-center">
@@ -130,7 +151,7 @@
     </section>
 
     <!-- task 2 -->
-    <section class="penjelasan" id="penjelasan">
+    <section class="penjelasan2" id="penjelasan2">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -204,7 +225,7 @@
     </section>
 
     <!-- task 3 -->
-    <section class="penjelasan" id="penjelasan">
+    <section class="penjelasan3" id="penjelasan3">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -213,11 +234,11 @@
                 </div>
             </div>
             <!-- row 3 -->
-
             <div class="row">
                 <div class="col-sm-5 col-sm-offset-1">
                     <p class="pKiri">
-                        &nbsp;&nbsp; Vending Machine merupakan penerapan dari bidang ilmu Teori Bahasa dan Automata yang
+                        &nbsp;&nbsp;<strong>Vending Machine</strong> merupakan penerapan dari bidang ilmu Teori Bahasa
+                        dan Automata yang
                         dapat menjual barang atau kebutuhan manusia secara otomatis. Sistem penjualan dengan
                         Vending Machine tidak membutuhkan operator, pembeli dapat memilih sendiri barang
                         yang diinginkan. Teori Bahasa dan Automata merupakan salah satu komponen bidang ilmu
@@ -253,12 +274,12 @@
 
                 <div class="col-sm-5">
                     <p class="pKanan">
-                        &nbsp;&nbsp;Model switch on/off digambarkan sebagai berikut :
-                        Model tersebut mengingat apakahswitch berada dalam state “on” atau state “off”.
+                        &nbsp;&nbsp;<strong>Model switch on/off</strong> di analogikan sebagai berikut : <br><br>
+                        - Model tersebut mengingat apakah switch berada dalam state “on” atau state “off”.
                         Model memungkinkan user untuk menekan tombol yang memiliki pengaruh berbeda tergantung pada
-                        keadaan switch:
-                        -Jika switch berada dalam state“off” maka setelah tombol ditekan state berubah menjadi “on”.
-                        -Jika switch berada dalam state“on” maka setelah tombol ditekan state berubah menjadi “off”.
+                        keadaan switch yakni, jika switch berada dalam state“off” maka setelah tombol ditekan state
+                        berubah menjadi “on” dan
+                        jika switch berada dalam state“on” maka setelah tombol ditekan state berubah menjadi “off”.
 
 
                     </p>
@@ -272,19 +293,19 @@
                         <!-- akhir row 2 -->
                     </p>
                 </div>
+
             </div>
         </div>
     </section>
     <!-- akhir row 3 -->
     <!-- akhir penjelasan -->
-
-
-
     <!-- isi -->
+    <br><br>
     <section class="isi" id="isi">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center">
+
                     <h2>Contoh gambar penerapan ilmu TBO</h2>
                     <hr>
                 </div>

@@ -26,6 +26,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -37,21 +38,32 @@
                 <a href="#home" class="navbar-brand page-scroll">Andi Andhika</a>
             </div>
 
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
 
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#penjelasan" class="page-scroll">Transaction</a></li>
-                <li><a href="desainbasisdata.html" class="page-scroll">Desain Basis Data</a></li>
-                <li><a href="Queryprocessing.html" class="page-scroll">Query Processing</a></li>
-                <li><a href="TBO.html" class="page-scroll">Teori Bahasa dan Otomata</a></li>
-                <li><a href="notasibig-o.html" class="page-scroll">Notasi Big-O</a></li>
-                <li><a href="index.html" class="page-scroll">Query Processing</a></li>
+                    <li><a href="#penjelasan" class="page-scroll">Transaction</a></li>
 
-
-
-
-            </ul>
-        </div>
-        </div>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Basis Data <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#penjelasan" class="page-scroll">Transaction</a></li>
+                            <li><a href="Queryprocessing.html" class="page-scroll">Query Processing</a></li>
+                            <li><a href="index.html" class="page-scroll">Evaluation Plan</a></li>
+                            <li><a href="desainbasisdata.html" class="page-scroll">Desain Basis Data</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Teori Bahasa dan Otomata <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="TBO.html" class="page-scroll">Teori Bahasa dan Otomata</a></li>
+                            <li><a href="notasibig-o.html" class="page-scroll">Notasi Big-O</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
     </nav>
     <!-- akhir navbar -->
 
@@ -62,42 +74,38 @@
         <p>Mahasiswa | D121181511 | Founder of Villa Bukit Hijau Malino</p>
     </div>
     <!-- akhir jumbotron -->
-
-
     <!-- Task -->
     <section class="penjelasan" id="penjelasan">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <h2 class="text-center"> Contoh Kasus Transaction</h2>
+                    <h2 class="text-center">Transaction</h2>
                     <hr>
                 </div>
             </div>
-            <br><br>
             <!-- row 1 -->
             <div class="row">
                 <div class="col-sm-5 col-sm-offset-1">
                     <p class="pKiri">
-                        &nbsp;&nbsp;<strong> Transaksi </strong>merupakan unit eksekusi program yang mengakses dan
-                        mungkin
-
-                        mengubah beberapa item data. Suatu transaksi harus melihat database yang konsisten,
+                        &nbsp;&nbsp;<strong>Transaction</strong> merupakan unit eksekusi program yang mengakses dan
+                        mungkin mengubah
+                        beberapa item data. Suatu transaksi harus melihat database yang konsisten,
                         selama eksekusi transaksi, database mungkin tidak konsisten. Ketika sebuah transaksi
                         dianggap commit maka database harus konsisten. Dua hal yang berkaitan dengan manajemen
                         transaksi:<br><br>
-                        - Kegagalan fungsi (Failures), terdiri dari kegagalan perangkat keras (hardware) dan system
-                        crash. <br>
-                        - Eksekusi beberapa transaksi secara bersamaan. <br>
-                        Transaksi mempunyai 2 fungsi utama: <br><br>
+                        1. Kegagalan fungsi (Failures), terdiri dari kegagalan perangkat keras (hardware) dan system
+                        crash. <br><br>
+                        2. Eksekusi beberapa transaksi secara bersamaan. <br><br>
+                        Selain itu, transaksi juga memiliki 2 fungsi utama yakni : <br><br>
                         1. Menyediakan reliabilitas, artinya jika terjadi kesalahan pada salah satu statement maka
                         seluruh perubahan akan digagalkan. Sehingga data yang tersimpan benar benar reliable(dapat
-                        diandalkan). <br>
+                        diandalkan). <br><br>
                         2. Melakukan isolasi, artinya satu transaksi harus di proses satu persatu. Sehingga tidak
-                        ada kemungkinan 2 program mengakses atau bahkan mengubah data sekaligus. <br><br>
+                        ada kemungkinan 2 program mengakses atau bahkan mengubah data sekaligus.
                         Transaksi memiliki 4 komponen utama, yaitu Atomicity, Consistency, Isolation and Durability yang
-                        biasa di singkat dengan ACID. Berikut penjelasan mengenai ACID beserta contoh kasus : <br><br>
-
-                        <strong>Atomicity</strong><br><br>
+                        biasa di singkat dengan ACID. <br><br> Berikut penjelasan mengenai ACID beserta contoh kasus :
+                        <br><br>
+                        <strong>(1). Atomicity</strong><br><br>
 
                         &nbsp;&nbsp;Adalah suatu aturan dimana perubahan dilakukan secara keseluruhan atau tidak sama
                         sekali.
@@ -134,14 +142,14 @@
                 </div>
                 <div class="col-sm-5">
                     <p class="pKanan">
-                        <strong> Consistency</strong><br><br>
+                        <strong>(2). Consistency</strong><br><br>
                         &nbsp;&nbsp;Menunjukkan konsistensi data yang ada setelah terjadi transaksi. Misalnya pada
                         contoh kasus
                         sebelumya, jika saldo A = 2000 dan saldo B = 500, maka setelah transaksi saldo A = 1000 dan
                         saldo B = 1500. Nah beberapa hal yang biasanya ditangani oleh dbms adalah mengenai integrity
                         constraint. Sedangkan jika berupa hasil perhitungan bisa di lakukan oleh aplikasi.<br><br>
 
-                        <strong> Isolation </strong> <br><br>
+                        <strong>(3). Isolation </strong> <br><br>
 
                         &nbsp;&nbsp;Pada prinsip isolation, data yang sedang di lakukan perubahan tidak boleh diakses
                         oleh
@@ -176,7 +184,7 @@
                         akses
                         secara bersamaan oleh lebih dari satu operasi.<br><br>
 
-                        <strong> Durability</strong><br><br>
+                        <strong>(4). Durability</strong><br><br>
 
                         &nbsp;&nbsp;Kemampuan DBMS untuk menyimpan data transaksi yang terjadi. Sehingga jika terjadi
                         kegagalan,

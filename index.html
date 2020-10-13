@@ -23,9 +23,11 @@
 <body>
 
 
+
     <!-- navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -38,17 +40,36 @@
             </div>
 
 
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#penjelasan" class="page-scroll">Evaluation Plan</a></li>
-                <li><a href="Queryprocessing.html" class="page-scroll">Query Processing</a></li>
-                <li><a href="TBO.html" class="page-scroll">Teori Bahasa dan Otomata</a></li>
-                <li><a href="notasibig-o.html" class="page-scroll">Notasi Big-O</a></li>
-                <li><a href="desainbasisdata.html" class="page-scroll">Desain Basis Data</a></li>
-                <li><a href="requirementsacid.html" class="page-scroll">Transaction</a></li>
-            </ul>
-        </div>
-        </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="#penjelasan" class="page-scroll">Evaluation Plan</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Basis Data <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#penjelasan" class="page-scroll">Evaluation Plan</a></li>
+                            <li><a href="Queryprocessing.html" class="page-scroll">Query Processing</a></li>
+                            <li><a href="desainbasisdata.html" class="page-scroll">Desain Basis Data</a></li>
+                            <li><a href="requirementsacid.html" class="page-scroll">Transaction</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Teori Bahasa dan Otomata <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="TBO.html" class="page-scroll">Teori Bahasa dan Otomata</a></li>
+                            <li><a href="notasibig-o.html" class="page-scroll">Notasi Big-O</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
     </nav>
+
     <!-- akhir navbar -->
 
     <!-- jumbotron -->
