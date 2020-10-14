@@ -133,7 +133,8 @@
 
                         3. Tambahkan saldo B sebesar 1000<br><br>
 
-                        Nah seluruh step diatas harus digabungkan sehingga apabila setelah step ke-2 terjadi kesalahan
+                        &nbsp;&nbsp;Nah seluruh step diatas harus digabungkan sehingga apabila setelah step ke-2 terjadi
+                        kesalahan
                         maka seluruh perubahan transaksi harus di batalkan. Setelah transaksi berhasil maka akan di
                         lakukan commit.<br><br>
 
@@ -164,11 +165,9 @@
 
                         T1 : Transfer A->B senilai 500<br><br>
 
-                        Kurangi saldo A 500
+                        &nbsp;&nbsp;Kurangi saldo A 500
                         Tambah saldo B 500
-                        T2 : Transfer B->A senilai 1000<br><br>
-
-                        Kurangi saldo B 1000
+                        T2 : Transfer B->A senilai 1000, dan Kurangi saldo B 1000
                         Tambah saldo A 1000
                         Nah bayangkan jika transaksi tersebut terjadi secara bersamaan dan di proses tanpa
                         isolasi
@@ -178,7 +177,7 @@
                         - Tambah saldo B 500<br>
                         - Kurangi saldo B 1000<br>
                         - Tambah saldo A 1000<br><br>
-                        Jika terjadi kegagalan pada T1, maka data akan tidak konsisten sebab pada T2 sudah
+                        &nbsp;&nbsp;Jika terjadi kegagalan pada T1, maka data akan tidak konsisten sebab pada T2 sudah
                         mengganti
                         menambahkan saldo pada B. Demikian pentingnya isolasi, sehingga data tidak akan bisa di
                         akses
